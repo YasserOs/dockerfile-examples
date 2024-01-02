@@ -5,7 +5,7 @@ var http = require('http');
 var server = http.createServer(function (request, response) {
   response.writeHead(200, {"Content-Type": "text/plain"});
   text = "Running Node.js:" + process.versions.node
-  text += "Mongo Servers: " + process.env.MONGODB
+  text += "\nApplication Version: " + "1"
 
   response.end(text);
 
